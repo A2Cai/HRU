@@ -7,9 +7,13 @@ Thanks for using HRU.py, if there is any problem please contact me: 【Wechat: A
 ### Options
 
 `-h, --help`	show this help message and exit
+
 `-f FILE, --file FILE`	files for detect
+
 `-s, --show` 	display result on console
+
 `-o OUTPUT_FILE, --output-file OUTPUT_FILE`	filename for output
+
 `-p, --pipe` 	receive target urls by pipe
 
 ### What is HRU?
