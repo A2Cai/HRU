@@ -37,7 +37,8 @@ class Hru:
         except:
             return False
         try:
-            title = findall("<title>(.*?)</title>", ans.text)[0].encode('utf-8').decode().strip()
+            ans.encoding = ans.apparent_encoding
+            title = findall("<title>(.*?)</title>", ans.text)[0].strip()
         except IndexError:
             title = ""
         self.result.append([url, title, ans.status_code, len(ans.text)])
